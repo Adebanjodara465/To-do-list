@@ -1,0 +1,53 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Patrick Hand", cursive;
+  background-color: #faeeef;
+}
+
+.logo{
+  color: #4a0053;
+}
+
+.nav-div{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 20px 5px 20px;
+  align-content: center;
+}
+
+.navlinks li{
+   list-style: none;
+   display: inline-block;  
+}
+
+li a{
+  text-decoration: none;
+  margin-left: 20px;
+  color:#b51a5e;
+}
+
+li a:hover{
+  color:#4a0053;
+  text-decoration: wavy underline;
+}
+
+/*
+li a:visited{
+  text-decoration: line-through; seems this cannot be done with css, try with js later
+}   */
+
+.profile{
+   display: flex;
+   align-items: center;
+}
+
+.profile-pic{
+  width: 40px;
+  border-radius: 50%;
+  border: 0.5px solid #ecb1c4;
+}
