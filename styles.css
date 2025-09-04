@@ -6,7 +6,7 @@
 
 body {
   font-family: "Patrick Hand", cursive;
-  background-color: #faeeef;
+  background-color: #f4eaf4;
 }
 
 .logo{
@@ -36,6 +36,10 @@ li a:hover{
   text-decoration: wavy underline;
 }
 
+li a:active{
+  color:black;
+}
+
 /*
 li a:visited{
   text-decoration: line-through; seems this cannot be done with css, try with js later
@@ -46,8 +50,75 @@ li a:visited{
    align-items: center;
 }
 
+.profile i{
+  color:#b51a5e;
+  border-radius: 50px;
+}
+
 .profile-pic{
   width: 40px;
   border-radius: 50%;
   border: 0.5px solid #ecb1c4;
+}
+
+.main-body{
+  margin:0px 100px 0px 100px;
+}
+
+.section-title{
+  margin: 10px 0px 40px 40px;
+  color: #b51a5e;
+  font-size: 25px;
+}
+
+.task-items{
+  display:flex;
+  flex-direction: column;
+  margin:0px 10px 0px 10px;
+}
+
+.task-item{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.task-item p{
+  font-size: 20px;
+}
+
+.task-item i{
+  color: #b51a5e;
+}
+
+.task-item button {
+  border: none;
+  padding: 10px;
+  background: rgba(181, 26, 94, 0.5);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Patrick Hand", cursive;
+  transition: 1s;
+}
+
+.task-item button:hover {
+  background: rgba(181, 26, 94, 1);
+  transition: 1s;
+  border:2px solid #ecb1c4;
+}
+
+.add-new{
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ecb1c4;
+  font-family: "Patrick Hand", cursive;
+  color: #b51a5e;
+  padding-left: 10px;
+}
+
+::placeholder{
+  padding-left: 10px;
+  font-family: "Patrick Hand", cursive;
 }
