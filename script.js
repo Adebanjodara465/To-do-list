@@ -1,22 +1,15 @@
 const taskInput = document.querySelector(".add-new");
 const taskContainer = document.querySelector(".task-items");
 
-//im adding a cool icon change feature!
-// figure out which page we’re on
-const isFavourites = document.body.classList.contains("favourites-page");
-
 function addTask(text) {
     if (text.trim() ==="") return; //this ignores empty inputs
 
     const taskItem = document.createElement("div");
     taskItem.classList.add("task-item");
 
-      // icon depends on page
-    const icon = isFavourites ? "fa-star" : "fa-poop";
-
     //to create a p tag with text (like the other already written ones)
     const taskText = document.createElement("p");
-    taskText.innerHTML = `<i class="fa-solid ${icon}"></i> ${text}`;
+    taskText.innerHTML = `<i class="fa-solid fa-poop"></i> ${text}`;
 
     //then creating the checkbox
     const checkbox = document.createElement("input");
