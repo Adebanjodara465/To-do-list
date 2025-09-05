@@ -62,6 +62,7 @@ li a:active{
 @media (max-width: 786px){
     .hamburger{
         display: flex;
+        margin-left: auto;
     }
     .nav-div{
       display: flex;
