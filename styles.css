@@ -11,16 +11,22 @@ body {
 
 .logo{
   color: #4a0053;
+  margin-right: 0px;
 }
 
 .nav-div{
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   margin: 30px 20px 5px 20px;
-  align-content: center;
+  justify-content: center;
+}
+
+.navlinks{
+ margin: 0 auto;
 }
 
 .navlinks li{
+  font-size: 1.2rem;
    list-style: none;
    display: inline-block;  
 }
@@ -35,6 +41,7 @@ display:none;
     flex-direction:column;
     cursor:pointer;
     gap: 5px;
+    margin-left: auto;
 }
 
 .hamburger span{
@@ -45,9 +52,12 @@ display:none;
 }
 
 li a{
+  display:flex;
+  align-items: center;
   text-decoration: none;
   margin-left: 20px;
   color:#b51a5e;
+  text-align: center;
 }
 
 li a:hover{
@@ -62,7 +72,6 @@ li a:active{
 @media (max-width: 786px){
     .hamburger{
         display: flex;
-        margin-left: auto;
     }
     .nav-div{
       display: flex;
@@ -115,7 +124,10 @@ li a:visited{
 }
 
 .main-body{
-  margin:0px 100px 0px 100px;
+  display: flex;
+  flex-direction: column;
+ align-items: start;
+  margin-left: 50px;
 }
 
 .section-title{
