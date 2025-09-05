@@ -25,6 +25,25 @@ body {
    display: inline-block;  
 }
 
+/* Hamburgere */
+.menu-toggle{
+display:none;
+}
+
+.hamburger{
+    display:none;
+    flex-direction:column;
+    cursor:pointer;
+    gap: 5px;
+}
+
+.hamburger span{
+    width: 25px;
+    height:3px;
+    background-color:#144900;
+    border-radius: 2px;
+}
+
 li a{
   text-decoration: none;
   margin-left: 20px;
@@ -40,6 +59,40 @@ li a:active{
   color:black;
 }
 
+@media (max-width: 786px){
+    .hamburger{
+        display: flex;
+    }
+    .nav-div{
+      display: flex;
+      justify-content: space-between;
+      gap: 350px;
+    }
+    .navlinks{
+        display:none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 60px;
+        right: 25px;
+        gap:10px;
+        background-color: white;
+        border:1px solid #ccc;
+        padding:10px;
+    }
+
+    .profile img{
+        display: none;
+    }
+    
+     .profile i{
+        display: none;
+    }
+
+    .menu-toggle:checked + .hamburger +.navlinks {
+        display:flex;
+    }
+}
 /*
 li a:visited{
   text-decoration: line-through; seems this cannot be done with css, try with js later
@@ -74,7 +127,6 @@ li a:visited{
 .task-items{
   display:flex;
   flex-direction: column;
-  margin:0px 10px 0px 10px;
 }
 
 .task-item{
